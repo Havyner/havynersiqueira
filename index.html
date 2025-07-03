@@ -5,31 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Havyner Siqueira</title>
 
-    <link rel="stylessheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
         <h2>Havyner Siqueira</h2>
-        <img src="img/imgpr.png" width="150px" height="200px">
+        <img src="img/imgpr.png" class="foto-pessoal" alt="foto redonda">
+        <nav id="navbar">
+            <ul id="nav_lista">
+                <li class="nav_op">
+                    <a href="#sobre">Sobre mim</a>
+                </li>
+                <li class="nav_op">
+                    <a href="#formacao">Formação</a>
+                </li>
+                <li class="nav_op">
+                    <a href="#portifolio">Portifólio</a>
+                </li>
+                <li class="nav_op">
+                    <a href="#contato">Contato</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <nav id="navbar">
-        <ul id="nav_lista">
-            <li class="nav_op">
-                <a href="#inicio">Sobre mim</a>
-            </li>
-            <li class="nav_op">
-                <a href="#formacao">Formação</a>
-            </li>
-            <li class="nav_op">
-                <a href="#portifolio">Portifólio</a>
-            </li>
-            <li class="nav_op">
-                <a href="#contato">Contato</a>
-            </li>
-        </ul>
-    </nav>
-
-    <section id="inicio">
+    <section id="sobre">
         <h2>Sobre Mim</h2>
         <p>Olá, me chamo Havyner, tenho 31 anos e estou em busca de uma transição de carreira.</p>
         <p>Estudante de Análise e Desenvolvimento de Sistema na Uninter.</p>
@@ -44,9 +43,10 @@
 
     <section id="portifolio">
         <h2>Portifólio</h2>
+        
         <div>
             <a href="https://github.com/Havyner/ConvertTiff_Pdf" target="_blank">
-                <h3>Tiff/PDF em Python</h3>
+                <h3>Converter Tiff/PDF em Python</h3>
                 <img src="img/convertiffpdf.png" width="250px" height="200px">
             </a>
         </div>

@@ -1,0 +1,149 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #333;
+  padding-top: 100px; /* Espaço para o header fixo */
+}
+
+/* Header fixo */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  z-index: 1000;
+  padding: 0 10px;
+}
+
+/* Título do site */
+header h2 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.foto-pessoal {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;         /* Garante que o conteúdo se encaixe bem */
+  border-radius: 50%;        /* Deixa a borda completamente arredondada */
+  border: 3px solid #ccc;    /* Opcional: borda para destaque */
+  position: absolute;
+  margin-left: 20px;
+}
+
+/* Menu de navegação */
+#navbar {
+  display: flex;
+  justify-content: center;
+}
+
+#nav_lista {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav_op a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: background-color 0.3s;
+}
+
+.nav_op a:hover {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+/* Seções */
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+section h2 {
+  margin-bottom: 15px;
+  color: #222;
+}
+
+/* Portfólio*/ 
+#portifolio div {
+  margin-bottom: 30px;
+}
+
+#portifolio a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#portifolio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  /*justify-content: center;*/
+}
+
+
+#portifolio img {
+  margin-top: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Rodapé */
+footer {
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+@media (max-width: 768px) {
+  header h2 {
+    font-size: 1.2rem;
+  }
+
+  #nav_lista {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  section {
+    padding: 40px 15px;
+  }
+
+  #portifolio div {
+    text-align: center;
+  }
+
+  #portifolio img {
+    width: 90%;
+    height: auto;
+  }
+}
+
+section {
+  scroll-margin-top: 100px; /* valor igual ou maior que a altura do header */
+}
+
+html {
+  scroll-behavior: smooth;
+}
