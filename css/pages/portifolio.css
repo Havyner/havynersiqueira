@@ -1,0 +1,22 @@
+/* Portfólio*/ 
+#portifolio div {
+  margin-bottom: 30px;
+}
+
+#portifolio a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#portifolio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+
+#portifolio img {
+  margin-top: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}

@@ -1,3 +1,5 @@
+@import url("pages/portifolio.css");
+
 /* Reset básico */
 * {
   margin: 0;
@@ -19,10 +21,11 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  height: 90px;
   background-color: #f8f8f8;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   z-index: 1000;
-  padding: 0 10px;
+  padding: 0 10px;  
 }
 
 /* Título do site */
@@ -37,8 +40,8 @@ header h2 {
   object-fit: cover;         /* Garante que o conteúdo se encaixe bem */
   border-radius: 50%;        /* Deixa a borda completamente arredondada */
   border: 3px solid #ccc;    /* Opcional: borda para destaque */
-  position: absolute;
-  margin-left: 20px;
+  margin-right: 100px;
+  float: right;
 }
 
 /* Menu de navegação */
@@ -81,30 +84,6 @@ section h2 {
   color: #222;
 }
 
-/* Portfólio*/ 
-#portifolio div {
-  margin-bottom: 30px;
-}
-
-#portifolio a {
-  text-decoration: none;
-  color: inherit;
-}
-
-#portifolio {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  /*justify-content: center;*/
-}
-
-
-#portifolio img {
-  margin-top: 10px;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-}
-
 /* Rodapé */
 footer {
   background-color: #f8f8f8;
@@ -121,9 +100,9 @@ footer {
 
   #nav_lista {
     flex-direction: column;
-    gap: 10px;
+    gap: 0;
     align-items: center;
-    padding: 10px 0;
+    padding: 5px 0;
   }
 
   section {
