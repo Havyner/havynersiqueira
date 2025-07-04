@@ -1,4 +1,8 @@
 /* Portfólio*/ 
+#portifolio h2 {
+  width: 100%;
+}
+
 #portifolio div {
   margin-bottom: 30px;
 }
