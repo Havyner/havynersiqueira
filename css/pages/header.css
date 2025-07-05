@@ -1,0 +1,56 @@
+/* Header fixo */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #b3b1b1;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Título do site */
+header h2 {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.foto-pessoal {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;         /* Garante que o conteúdo se encaixe bem */
+  border-radius: 50%;        /* Deixa a borda completamente arredondada */
+  border: 3px solid #ccc;    /* Opcional: borda para destaque */
+}
+
+/* Menu de navegação */
+#navbar {
+  display: flex;
+  justify-content: center;
+}
+
+#nav_lista {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0 0;
+}
+
+.nav_op a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: background-color 0.3s;
+}
+
+.nav_op a:hover {
+  background-color: #ddd;
+  border-radius: 5px;
+}

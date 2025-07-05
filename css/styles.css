@@ -1,4 +1,8 @@
+@import url("pages/header.css");
+@import url("pages/section.css");
 @import url("pages/portifolio.css");
+@import url("pages/contato.css");
+@import url("pages/footer.css");
 
 /* Reset básico */
 * {
@@ -9,91 +13,13 @@
 
 /* Estilos gerais */
 body {
-  font-family: Arial, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.6;
   background-color: #ffffff;
   color: #333;
   padding-top: 100px; /* Espaço para o header fixo */
 }
 
-/* Header fixo */
-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 100px;
-  background-color: #b3b1b1;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 20px;
-  box-sizing: border-box;
-}
-
-/* Título do site */
-header h2 {
-  text-align: center;
-  font-size: 1.5rem;
-}
-
-.foto-pessoal {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;         /* Garante que o conteúdo se encaixe bem */
-  border-radius: 50%;        /* Deixa a borda completamente arredondada */
-  border: 3px solid #ccc;    /* Opcional: borda para destaque */
-}
-
-/* Menu de navegação */
-#navbar {
-  display: flex;
-  justify-content: center;
-}
-
-#nav_lista {
-  display: flex;
-  gap: 30px;
-  list-style: none;
-  padding: 0;
-  margin: 5px 0 0 0;
-}
-
-.nav_op a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  padding: 8px 12px;
-  transition: background-color 0.3s;
-}
-
-.nav_op a:hover {
-  background-color: #ddd;
-  border-radius: 5px;
-}
-
-/* Seções */
-section {
-  padding: 60px 20px;
-  max-width: 900px;
-  margin: 0 auto;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-section h2 {
-  margin-bottom: 15px;
-  color: #222;
-}
-
-/* Rodapé */
-footer {
-  background-color: #b3b1b1;
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9rem;
-  color: #222121;
-}
 
 @media (max-width: 768px) {
   header h2 {
