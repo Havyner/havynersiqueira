@@ -3,15 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Título e ícone-->
     <title>Havyner Siqueira</title>
     <link rel="icon" href="img/iconeHS_tr.ico">
+    <!--Link do CSS principal-->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
+    <!--Cabeçalho da página-->
     <header>
+        <!--Importando a imagem do perfil e nome-->
         <img src="img/imgpr.png" class="foto-pessoal" alt="foto redonda">
         <h2>Havyner Siqueira</h2>
-        
+        <!--Menu de navegação e links para cada seção-->
         <nav id="navbar">
             <ul id="nav_lista">
                 <li class="nav_op">
@@ -29,13 +34,15 @@
             </ul>
         </nav>
     </header>
+
+    <!--Seção sobre mim-->
     <section id="sobre">
         <h2>Sobre Mim</h2>
         <p>Olá! Me chamo Havyner, tenho 31 anos e estou em transição de carreira, migrando da área da saúde para o setor de tecnologia.</p>
         <p>Atualmente, atuo como gerente de um laboratório de análises clínicas e sou estudante de Análise e Desenvolvimento de Sistemas na Uninter, com foco em me tornar desenvolvedor backend.</p>
         <p>Fora do ambiente profissional, sou apaixonado por leitura e valorizo ambientes tranquilos, sempre buscando o equilíbrio entre foco, aprendizado e bem-estar.</p>
     </section>
-
+    <!--Seção sobre a formação-->
     <section id="formacao">
         <h2>Formação</h2>
         <ul>
@@ -46,40 +53,39 @@
             <li>Git e GitHub (EmpowerData)</li>
         </ul>
     </section>
-
+    <!--Seção de protifólio-->
     <section id="portifolio">
         <h2>Portifólio</h2>
         <div>
+            <!--Conversor de arquivos TIFF para PDF-->
             <a href="https://github.com/Havyner/ConvertTiff_Pdf" target="_blank">
                 <h3>Converter Tiff/PDF em Python</h3>
                 <img src="img/convertiffpdf.png" width="250px" height="200px">
             </a>
         </div>
         <div>
+            <!--Projeto feito em aula pratica-->
             <a href="https://github.com/Havyner/FADS-ferramentas-de-Desenvolvimento-Web/tree/main/projeto_tecnologica/projeto_tecnologica" target="_blank">
                 <h3>Projeto TecnoLogica - Aula Prática</h3>
                 <img src="img/tecnologica.png" width="250px" height="200px">
             </a>
         </div>
-
     </section>
-
+    <!--Seção de contato-->
     <section id="contato">
         <h2>Contato</h2>
-
-        <div class="container">
-            <div class="formulario">
-                <h3 class="titulo">Envie sua mensagem</h3>
-
-                <form action="" method="get">
-                    <input type="text" name="name" placeholder="Seu nome">
-                    <input type="email" name="email" placeholder="Seu e-mail">
-                    <textarea name="message" placeholder="Digite sua mensagem"></textarea>
-
-                    <button type="submit">Enviar</button>
-                </form>
-            </div>
+        <!--Criando o formulário de contato-->
+        <div class="formulario">
+            <h3 class="titulo">Envie sua mensagem</h3>
+            <form action="" method="get">
+                <input type="text" name="name" placeholder="Seu nome">
+                <input type="email" name="email" placeholder="Seu e-mail">
+                <textarea name="message" placeholder="Digite sua mensagem"></textarea>
+                <!--Botão de envio de formulário-->
+                <button type="submit">Enviar</button>
+            </form>
         </div>
+
     </section>
 
     <footer>

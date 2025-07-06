@@ -1,24 +1,25 @@
+/*Estilo geral do fomulário*/
 .formulario{
-    display: flex;
+    display: flex; /*exibe os elementos em coluna*/
     flex-direction: column;
-    border-radius: 8px;
+    border-radius: 8px;/*arredonda os cantos*/
 }
-
+/*estilo do título*/
 .formulario .titulo{
-    padding: 24px 32px;
-    font-size: 24px;
+    padding: 24px 32px; /*espaçamento interno*/
+    font-size: 24px;/*tamanho da fonte*/
+    font-weight: bold;/*negrito*/
 }
 
 .formulario form{
     display: flex;
-    align-items: start;
-    flex-wrap: wrap;
+    align-items: flex-start; /*alinha ao top*/
+    flex-wrap: wrap;/*quebra de linha*/
     padding: 32px;
 }
-
+/*estilos do input e textearea*/
 .formulario input, .formulario textarea{
-    width: calc(50% - 8px);
-    height: 30px;
+    width: calc(50% - 8px);/*divide em 2 colunas com espaço*/
     border-radius: 8px;
     margin-bottom: 15px;
     padding-left: 15px;
@@ -27,14 +28,15 @@
 
 .formulario input{
     margin-right: 5px;
+    height: 30px;
 }
-
+/*campo da mensagem*/
 .formulario textarea{
     width: 100%;
     height: 100px;
     padding: 5px;
 }
-
+/*estilo do botão*/
 .formulario button{
     display: block;
     border: none;
@@ -45,9 +47,10 @@
     background-color: #b3b1b1;
     font-size: 15px;
     font-weight: bold;
-    cursor: pointer;
+    cursor: pointer;/*muda o cursor do mouse*/
+    transition: background-color 0.3s;
 }
-
+/*efeito de mudança de cor*/
 .formulario button:hover{
     background-color: #ddd;
 }
