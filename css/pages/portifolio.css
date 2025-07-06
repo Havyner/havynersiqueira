@@ -1,12 +1,12 @@
-/* Portfólio*/ 
+/*titulo da seção ortfólio*/ 
 #portifolio h2 {
   width: 100%;
 }
-
+/*espaçamento inferior entre os projetos*/
 #portifolio div {
   margin-bottom: 30px;
 }
-
+/*remove sublinhado*/
 #portifolio a {
   text-decoration: none;
   color: inherit;
@@ -17,8 +17,7 @@
   flex-wrap: wrap;
   gap: 30px;
 }
-
-
+/*estilo das imagens*/
 #portifolio img {
   margin-top: 10px;
   border: 2px solid #ccc;
