@@ -1,17 +1,18 @@
+/*Importa arquivos de estilo separados por seções*/
 @import url("pages/header.css");
 @import url("pages/section.css");
 @import url("pages/portifolio.css");
 @import url("pages/contato.css");
 @import url("pages/footer.css");
 
-/* Reset básico */
+/*básico em tudo*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Estilos gerais */
+/*Estilos gerais*/
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.6;
@@ -20,7 +21,7 @@ body {
   padding-top: 100px; /* Espaço para o header fixo */
 }
 
-
+/*Ajustes para telas menores*/
 @media (max-width: 768px) {
   header h2 {
     font-size: 1.2rem;
@@ -31,6 +32,7 @@ body {
     gap: 0;
     align-items: center;
     padding: 5px 0;
+    font-size: 0.8rem;
   }
 
   section {
@@ -46,11 +48,11 @@ body {
     height: auto;
   }
 }
-
+/*Garante que o scroll da página não esconda os títulos ao clicar nos links*/
 section {
-  scroll-margin-top: 100px; /* valor igual ou maior que a altura do header */
+  scroll-margin-top: 100px;
 }
-
+/*Fica mais suave ao clicar nos links*/
 html {
   scroll-behavior: smooth;
 }
